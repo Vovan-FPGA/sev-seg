@@ -29,47 +29,5 @@ always @(posedge clk) begin
 end
 
 assign im_out_b = (~syn[CN - 1] & syn[CN - 2]) ? 1 : 0;
-
-/*
-    if (syn[2] == 0 and syn[1] == 1) begin
-        im_out_b <= 1;
-    end
-    else begin
-        im_out_b <= 0;
-    end
-always @(posedge clk or negedge rst) begin
-    if (~rst) begin
-
-        count       <= 0;
-        out_b       <= 0;
-        im_out_b    <= 0;
-
-    end else begin
-        
-        if (in_b) begin
-            
-            count <= count + 1;
-            
-            if (count == {CN{1'b1}} ) begin
-
-                im_out_b    <= 1;
-                out_b       <= 1;
-                            
-            end
-            else begin
-                im_out_b    <= 0;
-            end
-            
-        end
-
-        else begin
-
-            count <= 0;
-            out_b <= 0;
-
-        end
-
-    end
-end
-  */  
+  
 endmodule
