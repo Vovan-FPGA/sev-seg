@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Mar  7 19:20:52 2026
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Revision Name : sev_seg
+Top-level Entity Name : sev_seg
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 104 / 6,272 ( 2 % )
+    Total combinational functions : 88 / 6,272 ( 1 % )
+    Dedicated logic registers : 97 / 6,272 ( 2 % )
+Total registers : 97
+Total pins : 15 / 92 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

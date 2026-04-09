@@ -1,0 +1,30 @@
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE6E22C8
+set_global_assignment -name TOP_LEVEL_ENTITY sev_seg
+set_global_assignment -name VERILOG_FILE ../src/sev_seg.v
+set_global_assignment -name VERILOG_FILE ../src/sev_seg_m.v
+set_global_assignment -name VERILOG_FILE ../src/b_filter.v
+
+# Создаем "виртуальные" пины (без номеров)
+# Потом откроете Assignment Editor и назначите номера
+set_location_assignment PIN_23 -to clk
+set_location_assignment PIN_25 -to rst
+
+set_location_assignment PIN_91  -to KEY_SW
+
+set_location_assignment PIN_127 -to SEG[0]
+set_location_assignment PIN_124 -to SEG[1]
+set_location_assignment PIN_126 -to SEG[2]
+set_location_assignment PIN_132 -to SEG[3]
+set_location_assignment PIN_129 -to SEG[4]
+set_location_assignment PIN_125 -to SEG[5]
+set_location_assignment PIN_121 -to SEG[6]
+set_location_assignment PIN_128 -to SEG[7]
+
+set_location_assignment PIN_133 -to AN[0]
+set_location_assignment PIN_135 -to AN[1]
+set_location_assignment PIN_136 -to AN[2]
+set_location_assignment PIN_137 -to AN[3]
+
+set_global_assignment -name SDC_FILE sev_seg.sdc
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.0 Lite Edition"
